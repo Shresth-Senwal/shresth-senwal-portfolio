@@ -1,0 +1,284 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Mobile-first responsive design with automatic resolution scaling */
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: clamp(14px, 2.5vw, 16px); /* Responsive base font size */
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%; /* Prevent iOS text size adjustment */
+    -ms-text-size-adjust: 100%;
+  }
+  
+  body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    touch-action: manipulation; /* Improve touch performance */
+    overflow-x: hidden; /* Prevent horizontal scroll on mobile */
+  }
+  
+  /* Improve touch targets for mobile */
+  button, a, [role="button"] {
+    min-height: 44px; /* iOS recommended touch target size */
+    min-width: 44px;
+    touch-action: manipulation;
+  }
+  
+  /* Prevent zoom on input focus on iOS */
+  input, select, textarea {
+    font-size: 16px; /* Prevents zoom on iOS */
+  }
+  
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    input, select, textarea {
+      font-size: 16px !important; /* Force 16px on mobile */
+    }
+    
+    /* Reduce motion for better mobile performance */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+    
+    /* Better scroll performance on mobile */
+    * {
+      -webkit-overflow-scrolling: touch;
+    }
+    
+    /* Optimize text rendering on mobile */
+    body {
+      text-rendering: optimizeSpeed;
+    }
+  }
+  
+  /* High DPI display optimizations */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    body {
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* Professional dark theme - Purple variant */
+    --background: 260 15% 8%; /* deep purple dark */
+    --foreground: 270 15% 92%; /* light purple-gray */
+
+    --card: 260 15% 10%;
+    --card-foreground: 270 15% 92%;
+
+    --popover: 260 15% 10%;
+    --popover-foreground: 270 15% 92%;
+
+    --primary: 270 60% 45%; /* deep purple */
+    --primary-foreground: 270 15% 92%;
+
+    --secondary: 260 10% 18%; /* dark purple-gray */
+    --secondary-foreground: 270 15% 92%;
+
+    --muted: 260 10% 18%;
+    --muted-foreground: 260 10% 55%;
+
+    --accent: 320 40% 55%; /* purple-pink accent */
+    --accent-foreground: 260 15% 8%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 270 15% 92%;
+
+    --border: 260 10% 18%;
+    --input: 260 10% 18%;
+    --ring: 320 40% 55%;
+
+    --radius: 0.5rem;
+
+    /* Professional portfolio specific colors - Purple theme */
+    --portfolio-bg: 260 15% 8%;
+    --portfolio-purple: 270 60% 45%;
+    --portfolio-purple-light: 280 50% 60%;
+    --portfolio-purple-dark: 260 70% 30%;
+    --portfolio-accent: 320 40% 55%;
+    --portfolio-gray: 260 10% 18%;
+    --portfolio-grid: 270 15% 85%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--portfolio-purple)), hsl(var(--portfolio-purple-light)));
+    --gradient-secondary: linear-gradient(135deg, hsl(var(--portfolio-gray)), hsl(var(--portfolio-purple)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--portfolio-accent)), hsl(var(--portfolio-purple)));
+    
+    /* Shadows */
+    --shadow-glow: 0 0 40px hsl(var(--portfolio-purple) / 0.3);
+    --shadow-purple-glow: 0 0 40px hsl(var(--portfolio-purple-light) / 0.25);
+    --shadow-elegant: 0 10px 30px -10px hsl(var(--portfolio-purple) / 0.3);
+    
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+    --sidebar-background: 260 15% 10%;
+    --sidebar-foreground: 270 15% 92%;
+    --sidebar-primary: 270 60% 45%;
+    --sidebar-primary-foreground: 270 15% 92%;
+    --sidebar-accent: 320 40% 55%;
+    --sidebar-accent-foreground: 260 15% 8%;
+    --sidebar-border: 260 10% 18%;
+    --sidebar-ring: 320 40% 55%;
+  }
+
+  .dark {
+    --background: 260 15% 6%;
+    --foreground: 270 15% 92%;
+
+    --card: 260 15% 8%;
+    --card-foreground: 270 15% 92%;
+
+    --popover: 260 15% 8%;
+    --popover-foreground: 270 15% 92%;
+
+    --primary: 270 60% 45%;
+    --primary-foreground: 270 15% 92%;
+
+    --secondary: 260 10% 15%;
+    --secondary-foreground: 270 15% 92%;
+
+    --muted: 260 10% 15%;
+    --muted-foreground: 260 10% 55%;
+
+    --accent: 320 40% 55%;
+    --accent-foreground: 260 15% 8%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 270 15% 92%;
+
+    --border: 260 10% 15%;
+    --input: 260 10% 15%;
+    --ring: 320 40% 55%;
+    --sidebar-background: 260 15% 8%;
+    --sidebar-foreground: 270 15% 92%;
+    --sidebar-primary: 270 60% 45%;
+    --sidebar-primary-foreground: 270 15% 92%;
+    --sidebar-accent: 320 40% 55%;
+    --sidebar-accent-foreground: 260 15% 8%;
+    --sidebar-border: 260 10% 15%;
+    --sidebar-ring: 320 40% 55%;
+  }
+
+  body {
+    background: linear-gradient(135deg, hsl(var(--portfolio-bg)), hsl(260 20% 6%));
+    color: hsl(var(--foreground));
+    font-family: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 1.05rem;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    overflow-x: hidden;
+  }
+}
+
+@layer components {
+  /* Portfolio specific component styles */
+  .portfolio-gradient-text {
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradient-flow 3s ease-in-out infinite;
+  }
+  
+  .portfolio-glow {
+    box-shadow: var(--shadow-glow);
+  }
+  
+  .portfolio-purple-glow {
+    box-shadow: var(--shadow-purple-glow);
+  }
+  
+  .portfolio-elegant-shadow {
+    box-shadow: var(--shadow-elegant);
+  }
+  
+  .portfolio-hover-scale {
+    transition: var(--transition-bounce);
+  }
+  
+  .portfolio-hover-scale:hover {
+    transform: scale(1.05);
+  }
+  
+  .portfolio-smooth-transition {
+    transition: var(--transition-smooth);
+  }
+
+  /* Glass button effect */
+  .glass-button {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  }
+}
+
+@layer utilities {
+  /* Custom keyframes for portfolio animations */
+  @keyframes gradient-flow {
+    0%, 100% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(var(--portfolio-purple) / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(var(--portfolio-purple) / 0.6);
+    }
+  }
+  
+  @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(4);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+}
