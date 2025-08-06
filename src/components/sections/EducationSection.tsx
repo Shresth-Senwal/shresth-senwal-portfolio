@@ -42,7 +42,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ className = 
   
   const achievements = [
     { number: 3, suffix: 'rd', label: 'Year B.Tech IT' },
-    { number: 2025, suffix: '', label: 'Expected Graduation' },
+    { number: 2027, suffix: '', label: 'Expected Graduation' },
     { number: 11, suffix: '+', label: 'Major Projects' },
     { number: 2, suffix: '', label: 'Hackathon Wins' },
   ];
