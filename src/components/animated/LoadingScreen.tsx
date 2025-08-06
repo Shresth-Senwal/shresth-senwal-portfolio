@@ -14,16 +14,16 @@ interface LoadingScreenProps {
 
 export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete }) => {
   const [progress, setProgress] = useState(0);
-  const [loadingText, setLoadingText] = useState('Initializing bluds...');
+  const [loadingText, setLoadingText] = useState('Initializing...');
   const [isComplete, setIsComplete] = useState(false);
 
   const loadingSteps = [
-    { progress: 15, text: 'Initializing bluds...' },
+    { progress: 15, text: 'Initializing...' },
     { progress: 35, text: 'Loading Portfolio...' },
     { progress: 55, text: 'Preparing Projects...' },
     { progress: 75, text: 'Setting up Experience...' },
     { progress: 90, text: 'Finalizing Details...' },
-    { progress: 100, text: 'Welcome to bluds!' }
+    { progress: 100, text: 'Welcome to Shresth Senwal!' }
   ];
 
   useEffect(() => {
@@ -224,7 +224,7 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete 
               </div>
             </motion.div>
 
-            {/* Team name */}
+            {/* Portfolio owner name */}
             <motion.h1
               initial={{ opacity: 0, y: 20, scale: 0.9 }}
               animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -233,23 +233,10 @@ export const LoadingScreen: React.FC<LoadingScreenProps> = ({ onLoadingComplete 
                 duration: 1.2,
                 ease: [0.4, 0, 0.2, 1] as const
               }}
-              className="text-3xl font-bold text-white mb-2"
+              className="text-3xl font-bold text-white mb-8"
             >
-              bluds
+              Shresth Senwal
             </motion.h1>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ 
-                delay: 0.7, 
-                duration: 1,
-                ease: [0.4, 0, 0.2, 1] as const
-              }}
-              className="text-portfolio-purple-light mb-12 text-lg"
-            >
-              Development Team
-            </motion.p>
 
             {/* Loading text */}
             <AnimatePresence mode="wait">
