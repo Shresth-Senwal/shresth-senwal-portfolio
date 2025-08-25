@@ -22,14 +22,22 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
   const projects = [
     {
       id: '1',
-      title: 'Legally AI Paralegal',
-      description: 'Developed an AI-powered paralegal tool that automates legal research, document analysis, and case briefing for legal professionals.',
-      tech: ['AI/ML', 'Natural Language Processing', 'Legal Tech', 'Document Analysis'],
-      github: 'https://github.com/Shresth-Senwal/legally-assist-ai',
-      demo: 'https://legally-assist-ai.vercel.app/',
+      title: 'IEEE RAS MUJ Website',
+      description: 'Developed the official website for IEEE Robotics and Automation Society - Manipal University Jaipur, featuring modern design and comprehensive event management.',
+      tech: ['Web Development', 'React', 'Modern Design', 'Event Management'],
+      github: 'https://github.com/Shresth-Senwal/pixel-palettes-pls',
+      demo: 'https://ieeerasmuj.com/',
     },
     {
       id: '2',
+      title: 'Pixel Palettes',
+      description: 'Created a dedicated hackathon event website for Pixel Palettes, featuring dynamic registration, event details, and participant management systems.',
+      tech: ['Event Website', 'Hackathon Management', 'React', 'Registration System'],
+      github: 'https://github.com/Shresth-Senwal/pixel-palettes-pls',
+      demo: 'https://www.ieeerasmuj.com/pixelpalettes/',
+    },
+    {
+      id: '3',
       title: 'Fintrack GenZ Vision',
       description: 'Built a modern, AI-powered personal finance app for Gen Z with gamified savings, real-time analytics, secure auth, and a mobile-first UI.',
       tech: ['AI/ML', 'Personal Finance', 'React', 'Mobile-First Design'],
@@ -37,7 +45,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
       demo: 'https://fintrack-genz-vision.vercel.app/',
     },
     {
-      id: '3',
+      id: '4',
       title: 'Prism – AI-Powered Topic Analysis Platform',
       description: 'Developed an AI-based platform that aggregates and analyzes digital content, delivering insights, trends, and diverse perspectives in a user-friendly interface.',
       tech: ['AI/ML', 'Content Analysis', 'Data Analytics', 'Machine Learning'],
@@ -45,7 +53,15 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
       demo: 'https://prism-app-nine.vercel.app/',
     },
     {
-      id: '4',
+      id: '5',
+      title: 'Legally AI Paralegal',
+      description: 'Developed an AI-powered paralegal tool that automates legal research, document analysis, and case briefing for legal professionals.',
+      tech: ['AI/ML', 'Natural Language Processing', 'Legal Tech', 'Document Analysis'],
+      github: 'https://github.com/Shresth-Senwal/legally-assist-ai',
+      demo: 'https://legally-assist-ai.vercel.app/',
+    },
+    {
+      id: '6',
       title: 'MedSecure – HIPAA-Compliant Medical Record Exchange Platform',
       description: 'Created a secure web platform using Next.js 15 and TypeScript for managing and sharing medical records while ensuring compliance and data privacy.',
       tech: ['Next.js 15', 'TypeScript', 'HIPAA Compliance', 'Security'],
@@ -53,7 +69,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
       demo: undefined,
     },
     {
-      id: '5',
+      id: '7',
       title: 'MCP Enabled AEMT (Autonomous Error Management Tool)',
       description: 'Built a tool for real-time system error detection and remediation, leveraging AI and multicore processing.',
       tech: ['AI/ML', 'Error Detection', 'Multicore Processing', 'Automation'],
@@ -61,7 +77,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
       demo: undefined,
     },
     {
-      id: '6',
+      id: '8',
       title: 'Hybrid VTOL Drone',
       description: 'Led the design and ongoing development of a VTOL drone with unique transformation capabilities; participated in patent filing and fostered learning about aerospace systems.',
       tech: ['Robotics', 'UAV Design', 'Aerospace Engineering', 'Hardware Integration'],
