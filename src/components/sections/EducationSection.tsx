@@ -18,7 +18,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ className = 
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   
   const educationItems = [
-    'Manipal University Jaipur - B.Tech Information Technology (2024-2027) - Expected Graduation: May 2027',
+    'Manipal University Jaipur - B.Tech Information Technology (2023-2027) - Expected Graduation: May 2027',
     'Relevant Coursework: Artificial Intelligence, Machine Learning, Robotics',
     'IEEE RAS (Robotics and Automation Society) Member',
     'Technical Secretary, IEEE RAS MUJ (May 2025 – Present)',

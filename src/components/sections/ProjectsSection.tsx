@@ -29,20 +29,20 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
       demo: 'https://prism-app-nine.vercel.app/',
     },
     {
-      id: '1',
-      title: 'IEEE RAS MUJ Website',
-      description: 'Developed the official website for IEEE Robotics and Automation Society - Manipal University Jaipur, featuring modern design and comprehensive event management.',
-      tech: ['Web Development', 'React', 'Modern Design', 'Event Management'],
-      github: 'https://github.com/Shresth-Senwal/pixel-palettes-pls',
-      demo: 'https://ieeerasmuj.com/',
-    },
-    {
       id: '2',
       title: 'Pixel Palettes',
       description: 'Created a dedicated hackathon event website for Pixel Palettes, featuring dynamic registration, event details, and participant management systems.',
       tech: ['Event Website', 'Hackathon Management', 'React', 'Registration System'],
       github: 'https://github.com/Shresth-Senwal/pixel-palettes-pls',
       demo: 'https://www.ieeerasmuj.com/pixelpalettes/',
+    },
+    {
+      id: '1',
+      title: 'IEEE RAS MUJ Website',
+      description: 'Developed the official website for IEEE Robotics and Automation Society - Manipal University Jaipur, featuring modern design and comprehensive event management.',
+      tech: ['Web Development', 'React', 'Modern Design', 'Event Management'],
+      github: 'https://github.com/Shresth-Senwal/pixel-palettes-pls',
+      demo: 'https://ieeerasmuj.com/',
     },
     {
       id: '3',
