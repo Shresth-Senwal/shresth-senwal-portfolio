@@ -21,6 +21,14 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
   // Updated with user-provided live and GitHub links
   const projects = [
     {
+      id: '4',
+      title: 'Prism – AI-Powered Topic Analysis Platform',
+      description: 'Developed an AI-based platform that aggregates and analyzes digital content, delivering insights, trends, and diverse perspectives in a user-friendly interface.',
+      tech: ['AI/ML', 'Content Analysis', 'Data Analytics', 'Machine Learning'],
+      github: 'https://github.com/Shresth-Senwal/prism-app',
+      demo: 'https://prism-app-nine.vercel.app/',
+    },
+    {
       id: '1',
       title: 'IEEE RAS MUJ Website',
       description: 'Developed the official website for IEEE Robotics and Automation Society - Manipal University Jaipur, featuring modern design and comprehensive event management.',
@@ -38,19 +46,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
     },
     {
       id: '3',
-      title: 'Fintrack GenZ Vision',
+      title: 'Fintrack',
       description: 'Built a modern, AI-powered personal finance app for Gen Z with gamified savings, real-time analytics, secure auth, and a mobile-first UI.',
       tech: ['AI/ML', 'Personal Finance', 'React', 'Mobile-First Design'],
       github: 'https://github.com/Shresth-Senwal/fintrack-genz-vision',
       demo: 'https://fintrack-genz-vision.vercel.app/',
-    },
-    {
-      id: '4',
-      title: 'Prism – AI-Powered Topic Analysis Platform',
-      description: 'Developed an AI-based platform that aggregates and analyzes digital content, delivering insights, trends, and diverse perspectives in a user-friendly interface.',
-      tech: ['AI/ML', 'Content Analysis', 'Data Analytics', 'Machine Learning'],
-      github: 'https://github.com/Shresth-Senwal/prism-app',
-      demo: 'https://prism-app-nine.vercel.app/',
     },
     {
       id: '5',
