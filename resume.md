@@ -41,7 +41,12 @@ Manipal University Jaipur | July 2024 – May 2025
  Organized technical workshops on robotics and hardware integration. 
  Emphasized collaborative learning and sharing of best practices in UAV design. 
 PROJECTS
- Legally AI Paralegal
+ N.E.W.S – Smart Health Monitoring System
+Developed an AI-driven platform for water-borne disease detection in rural Northeast India, built 
+with React, Node.js, Express.js, and XGBoost ML models. Implemented multilingual offline 
+functionality via LoRaWAN, real-time dashboards, and anomaly detection with 85-90% accuracy using 
+MongoDB Atlas as the database. 
+ Legally AI Paralegal
 Developed an AI-powered paralegal tool that automates legal research, document analysis, and case 
 briefing for legal professionals. 
  Fintrack GenZ Vision
@@ -75,7 +80,14 @@ safety.
 Designed a high-speed line-following robot with Arduino UNO, experimenting with advanced control 
 algorithms in a competitive setting. 
 HACKATHONS
- Winner, Best Tech Category – Nebula Nexus Hackathon
+ Smart India Hackathon (SIH) 2025 – Cleared Internal Round
+o Developed N.E.W.S health monitoring platform for water-borne disease detection; 
+shortlisted for national round. 
+ HackX 2025 – Second Round Qualifier (Ongoing)
+o Advanced to second round of Rajasthan's largest hackathon at MUJ. 
+ Hacks by ACM MUJ – Finalist
+o Competed with innovative technical solutions and collaborative problem-solving. 
+ Winner, Best Tech Category – Nebula Nexus Hackathon
 Cosmos Club, MUJ 
 o Developed a mobile-first Gen Z finance management website, prioritizing usability and real￾time insights. 
  Finalist – Hackerzstreet Hackathon

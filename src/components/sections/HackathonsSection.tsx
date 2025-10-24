@@ -14,6 +14,45 @@ export const HackathonsSection: React.FC<HackathonsSectionProps> = ({ className 
   const hackathons = [
     {
       id: '1',
+      title: 'Smart India Hackathon (SIH) 2025',
+      organizer: 'Government of India',
+      achievement: 'Cleared Internal Round',
+      project: 'N.E.W.S Health Monitoring Platform',
+      description: 'Developed N.E.W.S health monitoring platform for water-borne disease detection; shortlisted for national round.',
+      tech: ['React', 'Node.js', 'XGBoost', 'Healthcare Tech', 'AI/ML', 'LoRaWAN'],
+      date: '2025',
+      participants: 'Team Event',
+      icon: Trophy,
+      color: 'from-green-400 to-emerald-500'
+    },
+    {
+      id: '2',
+      title: 'HackX 2025',
+      organizer: 'Manipal University Jaipur',
+      achievement: 'Second Round Qualifier (Ongoing)',
+      project: 'In Progress',
+      description: 'Advanced to second round of Rajasthan\'s largest hackathon at MUJ.',
+      tech: ['Innovation', 'Problem Solving', 'Technical Solutions'],
+      date: '2025',
+      participants: 'Team Event',
+      icon: Trophy,
+      color: 'from-orange-400 to-red-500'
+    },
+    {
+      id: '3',
+      title: 'Hacks by ACM MUJ',
+      organizer: 'ACM MUJ',
+      achievement: 'Finalist',
+      project: 'Technical Solutions',
+      description: 'Competed with innovative technical solutions and collaborative problem-solving.',
+      tech: ['Innovation', 'Collaboration', 'Technical Solutions'],
+      date: '2025',
+      participants: 'Team Event',
+      icon: Trophy,
+      color: 'from-cyan-400 to-blue-500'
+    },
+    {
+      id: '4',
       title: 'Nebula Nexus Hackathon',
       organizer: 'Cosmos Club, MUJ',
       achievement: 'Winner - Best Tech Category',
@@ -26,7 +65,7 @@ export const HackathonsSection: React.FC<HackathonsSectionProps> = ({ className 
       color: 'from-yellow-400 to-orange-500'
     },
     {
-      id: '2',
+      id: '5',
       title: 'Hackerzstreet Hackathon',
       organizer: 'IEEE CS MUJ',
       achievement: 'Finalist',

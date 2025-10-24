@@ -44,7 +44,7 @@ export const EducationSection: React.FC<EducationSectionProps> = ({ className = 
     { number: 3, suffix: 'rd', label: 'Year B.Tech IT' },
     { number: 2027, suffix: '', label: 'Expected Graduation' },
     { number: 11, suffix: '+', label: 'Major Projects' },
-    { number: 2, suffix: '', label: 'Hackathon Wins' },
+    { number: 5, suffix: '', label: 'Time Hackathon Finalist' },
   ];
 
   const nextCard = () => {

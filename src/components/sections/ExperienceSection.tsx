@@ -16,7 +16,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ className 
       title: 'AI/ML Intern',
       company: 'Innominds',
       location: 'Remote',
-      period: 'May 2025 – Present',
+      period: 'May 2025 – August 2025',
       responsibilities: [
         'Assist with machine learning and AI projects, including computer vision and analytics',
         'Collaborate with team on optimizing model performance and integrating solutions into real-world applications',

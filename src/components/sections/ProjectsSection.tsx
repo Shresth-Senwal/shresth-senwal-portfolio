@@ -21,6 +21,14 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
   // Updated with user-provided live and GitHub links
   const projects = [
     {
+      id: '9',
+      title: 'N.E.W.S – Smart Health Monitoring System',
+      description: 'AI-driven platform for water-borne disease detection in rural Northeast India. Built with React, Node.js, Express.js, and XGBoost ML models. Implemented multilingual offline functionality via LoRaWAN, real-time dashboards, and anomaly detection with 85-90% accuracy using MongoDB Atlas as the database.',
+      tech: ['React', 'Node.js', 'Express.js', 'XGBoost', 'LoRaWAN', 'MongoDB Atlas', 'AI/ML'],
+      github: undefined,
+      demo: undefined,
+    },
+    {
       id: '4',
       title: 'Prism – AI-Powered Topic Analysis Platform',
       description: 'Developed an AI-based platform that aggregates and analyzes digital content, delivering insights, trends, and diverse perspectives in a user-friendly interface.',
