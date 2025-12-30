@@ -12,10 +12,10 @@ interface HeroSectionProps {
 
 export const HeroSection: React.FC<HeroSectionProps> = ({ className = '' }) => {
   const roles = [
-    'AI/ML Engineer',
+    'Software Engineering Intern',
     'Full-Stack Developer',
+    'AI/ML Engineer',
     'B.Tech IT Student',
-    'Robotics Enthusiast',
     'Problem Solver'
   ];
 

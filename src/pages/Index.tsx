@@ -7,7 +7,6 @@ import { Header } from '@/components/layout/Header';
 import { HeroSection } from '@/components/sections/HeroSection';
 import { AboutSection } from '@/components/sections/AboutSection';
 import { ExperienceSection } from '@/components/sections/ExperienceSection';
-import { EducationSection } from '@/components/sections/EducationSection';
 import { ProjectsSection } from '@/components/sections/ProjectsSection';
 import { HackathonsSection } from '@/components/sections/HackathonsSection';
 import { ContactSection } from '@/components/sections/ContactSection';
@@ -80,13 +79,7 @@ const Index = () => {
                   >
                     <ExperienceSection />
                   </motion.div>
-                  <motion.div
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: 1.4, duration: 0.6 }}
-                  >
-                    <EducationSection />
-                  </motion.div>
+                  {/* EducationSection removed per user request */}
                   <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}

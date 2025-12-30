@@ -28,7 +28,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ className = '' }) =>
               textClassName="text-gray-300 text-base sm:text-lg leading-relaxed max-w-4xl mx-auto px-2"
               delay={0.01} // Reduced from 0.1 to 0.03 (30ms)
             >
-              I am a 3rd-year B.Tech Information Technology student at Manipal University Jaipur with a strong passion for AI/ML and full-stack web development. As an AI/ML intern at Innominds and Technical Secretary of IEEE RAS MUJ, I combine technical expertise with collaborative leadership to solve real-world problems.
+              Results-driven software engineering student with hands-on experience in full-stack development, AI/ML, and distributed systems. Demonstrated ability to build scalable applications using modern frameworks and deliver production-ready solutions. Strong foundation in IoT systems, system design, and agile methodologies.
             </ScrollReveal>
 
             <ScrollReveal
@@ -38,7 +38,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ className = '' }) =>
               textClassName="text-gray-300 text-base sm:text-lg leading-relaxed max-w-4xl mx-auto px-2"
               delay={0.01} // Reduced from 0.1 to 0.04 (40ms)
             >
-              My expertise spans Python, TypeScript, PyTorch, React, Next.js 15, and Node.js. I've developed AI-powered applications including legal research tools, medical record platforms, and computer vision systems. I'm passionate about collaborative learning, UAV design, and using technology to create innovative solutions.
+              Currently serving as AI/ML Engineering Intern at Innominds and Technical Secretary at IEEE RAS MUJ. My expertise spans Python, Java, JavaScript, TypeScript, React, Next.js, Node.js, PyTorch, and TensorFlow. I've developed production systems ranging from HIPAA-compliant medical platforms to IoT health monitoring solutions, with a proven track record of competitive achievements including SIH 2025 Grand Finalist (Top 0.1% nationwide).
             </ScrollReveal>
           </div>
 
@@ -46,15 +46,23 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ className = '' }) =>
             <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-4 justify-center max-w-4xl mx-auto px-2">
               {[
                 'Python',
+                'Java',
+                'JavaScript',
                 'TypeScript',
-                'PyTorch',
                 'React',
-                'Next.js 15',
+                'Next.js',
                 'Node.js',
-                'AI/ML',
-                'Computer Vision',
-                'UAV Design',
-                'Robotics'
+                'PyTorch',
+                'TensorFlow',
+                'Flask',
+                'Express.js',
+                'MongoDB',
+                'PostgreSQL',
+                'AWS',
+                'Docker',
+                'GraphQL',
+                'RESTful APIs',
+                'Microservices'
               ].map((skill, index) => (
                 <div
                   key={skill}

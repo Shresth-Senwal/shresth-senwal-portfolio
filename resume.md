@@ -1,95 +1,58 @@
 SHRESTH SENWAL
-Manipal University Jaipur 
-Phone: +91 9999885717 
-Email: shresth.senwal@gmail.com 
-GitHub: github.com/Shresth-Senwal 
-OBJECTIVE
-Dedicated AI/ML engineer and AI-enabled full stack web developer focused on using technology to solve 
-real-world problems. Collaborative, always eager to learn, and motivated by new challenges in AI, robotics, 
-and web development. 
+Software Engineering Intern — Full Stack Developer
+# shresth.senwal@gmail.com —  +91 9999885717 — § Github —  Portfolio
+SUMMARY
+Results-driven software engineering student with hands-on experience in full-stack development, AI/ML, and distributed systems. Demonstrated ability to build scalable applications using modern frameworks and deliver productionready solutions. Strong foundation in IoT systems, system design, and agile methodologies. Seeking software
+engineering internship to contribute technical expertise and collaborative problem-solving skills.
 EDUCATION
-Bachelor of Technology in Information Technology (3rd Year)
-Manipal University Jaipur, Jaipur 
-Expected Graduation: May 2027 
- Relevant Coursework: Artificial Intelligence, Machine Learning, Robotics 
- Member: IEEE RAS (Robotics and Automation Society) 
- Technical Secretary, IEEE RAS MUJ (May 2025 – Present) 
+B.Tech, Information Technology Expected May 2027
+Manipal University Jaipur
+Relevant Coursework: IoT Systems, Database Management Systems, Operating Systems, Software Engineering,
+Object-Oriented Programming, Computer Networks, Distributed Systems
 TECHNICAL SKILLS
- Programming: Python,TypeScript 
- Libraries & Tools: NumPy, Pandas, Matplotlib, PyTorch, React, Next.js 15, Node.js 
- Web Development: Full stack application development, RESTful APIs, frontend with React/Next.js, 
-backend with Node.js 
- Deep Learning: Convolutional neural networks, computer vision, model deployment 
- Robotics & Systems: UAV design, hardware-software integration 
- Cloud: Experience with modern cloud and DevOps tools 
-EXPERIENCE
-AI/ML Intern, Innominds
-Remote | May 2025 – Present
- Assist with machine learning and AI projects, including computer vision and analytics. 
- Collaborate with team on optimizing model performance and integrating solutions into real-world 
-applications. 
- Engage in code discussions and contribute to the team's understanding of AI/ML best practices. 
-Technical Secretary, IEEE Robotics and Automation Society, MUJ
-Manipal University Jaipur | May 2025 – Present
- Support the society’s technical activities, documentation, and events. 
- Encourage collaboration, foster technical engagement, and share knowledge among student 
-members. 
- Help organize robotics and automation workshops, promoting a community of learners. 
-Head of UAV Design, IEEE Robotics and Automation Society, MUJ
-Manipal University Jaipur | July 2024 – May 2025
- Led a team developing UAV systems, contributing ideas and engineering solutions alongside peers. 
- Organized technical workshops on robotics and hardware integration. 
- Emphasized collaborative learning and sharing of best practices in UAV design. 
+Languages Python, Java, JavaScript, TypeScript, C++, SQL, HTML/CSS
+Frameworks React, Next.js, Node.js, Express.js, Flask, PyTorch, TensorFlow
+Developer Tools Git, GitHub, Docker, VS Code, Postman, CI/CD, Jest, Linux/Unix
+Technologies RESTful APIs, GraphQL, MongoDB, PostgreSQL, Firebase, AWS, Microservices, WebSockets,
+OAuth, JWT
+WORK EXPERIENCE
+Generative AI Engineering Intern, Qapp.ai Remote — December 2025 – Present
+• Building generative AI applications using state-of-the-art LLMs and prompt engineering techniques to deliver productionready solutions.
+• Developing and deploying AI-powered features using modern web frameworks, ensuring seamless integration with
+existing systems.
+• Participating in agile workflows and code reviews, implementing best practices for version control and documentation.
+AI/ML Engineering Intern, Innominds Remote — May 2025 – August 2025
+• Implemented machine learning pipelines using Python and PyTorch, improving model accuracy by 75% through hyperparameter tuning and feature engineering.
+• Developed RESTful APIs using Flask to deploy ML models into production, handling real-time inference requests.
+• Participated in agile sprints and code reviews, following industry best practices for version control and testing.
+Technical Secretary, IEEE RAS MUJ Jaipur — May 2025 – Present
+• Directed technical documentation and engineering workflows for robotics and UAV development projects, ensuring
+quality standards across 5+ concurrent initiatives.
+• Led software integration for autonomous UAV systems, implementing flight control algorithms and sensor fusion for
+real-time navigation.
+• Organized technical workshops on embedded systems, robotics programming, and IoT integration for 100+ students.
+Head of UAV Design, IEEE RAS MUJ Jaipur — July 2024 – May 2025
+• Managed multidisciplinary team of 15 students in end-to-end design and development of UAV systems and hybrid
+VTOL drones using agile methodologies.
+• Designed hardware-software integration frameworks for autonomous flight systems, implementing communication protocols and control systems.
 PROJECTS
- N.E.W.S – Smart Health Monitoring System
-Developed an AI-driven platform for water-borne disease detection in rural Northeast India, built 
-with React, Node.js, Express.js, and XGBoost ML models. Implemented multilingual offline 
-functionality via LoRaWAN, real-time dashboards, and anomaly detection with 85-90% accuracy using 
-MongoDB Atlas as the database. 
- Legally AI Paralegal
-Developed an AI-powered paralegal tool that automates legal research, document analysis, and case 
-briefing for legal professionals. 
- Fintrack GenZ Vision
-Built a modern, AI-powered personal finance app for Gen Z with gamified savings, real-time 
-analytics, secure auth, and a mobile-first UI. 
- Prism – AI-Powered Topic Analysis Platform
-Developed an AI-based platform that aggregates and analyzes digital content, delivering insights, 
-trends, and diverse perspectives in a user-friendly interface. 
- MCP Enabled AEMT (Autonomous Error Management Tool)
-Built a tool for real-time system error detection and remediation, leveraging AI and multicore 
-processing. 
- MedSecure – HIPAA-Compliant Medical Record Exchange Platform
-Created a secure web platform using Next.js 15 and TypeScript for managing and sharing medical 
-records while ensuring compliance and data privacy. 
- ML Model for Detecting Safety Gear on Job Sites
-Designed a computer vision solution for real-time PPE compliance monitoring, enhancing job site 
-safety. 
- Automatic Pharmaceutical Workflow Automation Tool
-Automated complex, document-heavy pharmaceutical processes for greater efficiency and 
-compliance. 
- Hybrid VTOL Drone
-Led the design and ongoing development of a VTOL drone with unique transformation capabilities; 
-participated in patent filing and fostered learning about aerospace systems. 
- YOLOv9 Implementation for Object Detection
-Developed a real-time object detection tool using PyTorch, focusing on accuracy and efficient 
-performance. 
- Implementation of Pi-hole for Home Network Security
-Built a Raspberry Pi-based DNS sinkhole, blocking ads and malicious domains to reinforce network 
-safety. 
- Line-Following Robot 
-Designed a high-speed line-following robot with Arduino UNO, experimenting with advanced control 
-algorithms in a competitive setting. 
-HACKATHONS
- Smart India Hackathon (SIH) 2025 – Cleared Internal Round
-o Developed N.E.W.S health monitoring platform for water-borne disease detection; 
-shortlisted for national round. 
- HackX 2025 – Second Round Qualifier (Ongoing)
-o Advanced to second round of Rajasthan's largest hackathon at MUJ. 
- Hacks by ACM MUJ – Finalist
-o Competed with innovative technical solutions and collaborative problem-solving. 
- Winner, Best Tech Category – Nebula Nexus Hackathon
-Cosmos Club, MUJ 
-o Developed a mobile-first Gen Z finance management website, prioritizing usability and real￾time insights. 
- Finalist – Hackerzstreet Hackathon
-IEEE CS MUJ 
-o Created MedSecure, a HIPAA-compliant medical record management and exchange platform. 
+MedSecure – HIPAA-Compliant Medical Records Platform Next.js 15, TypeScript, PostgreSQL
+• Built secure healthcare platform with role-based access control (RBAC), JWT authentication, and encrypted data
+storage.
+• Architected normalized relational database schema with optimized queries for efficient data retrieval.
+N.E.W.S – IoT Health Monitoring System React, Python, LoRaWAN, Grand Finalist - SIH 2025
+• Developed distributed system processing real-time sensor data from 50+ IoT devices with 99.9% uptime.
+• Implemented ETL pipelines using Python to process water quality data, enabling predictive analytics for disease
+detection.
+Legally AI – Legal Research Automation Tool Python, NLP, OpenAI API
+• Engineered document processing system using NLP and LLMs, reducing case research time by 70%.
+• Built scalable RESTful API with rate limiting and caching mechanisms for concurrent requests.
+ACHIEVEMENTS
+Smart India Hackathon (SIH) 2025 – Grand Finalist (Top 0.1% nationwide)
+Competed at national finals among 890,000 students with IoT-based healthcare solution.
+Nebula Nexus Hackathon – Winner, Best Technical Implementation
+Developed full-stack fintech application with real-time data processing and responsive UI in 24 hours.
+Hacks by ACM MUJ – Finalist
+Built collaborative problem-solving platform with WebSocket integration for real-time communication.
+Hackerzstreet by IEEE CS – Finalist
+Created secure medical record exchange platform with end-to-end encryption and compliance features.

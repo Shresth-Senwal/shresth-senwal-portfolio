@@ -13,42 +13,55 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ className 
   const experiences = [
     {
       id: '1',
-      title: 'AI/ML Intern',
+      title: 'Generative AI Engineering Intern',
+      company: 'Qapp.ai',
+      location: 'Remote',
+      period: 'December 2025 – Present',
+      responsibilities: [
+        'Building generative AI applications using state-of-the-art LLMs and prompt engineering techniques to deliver production-ready solutions',
+        'Developing and deploying AI-powered features using modern web frameworks, ensuring seamless integration with existing systems',
+        'Participating in agile workflows and code reviews, implementing best practices for version control and documentation'
+      ],
+      tech: ['LLMs', 'Prompt Engineering', 'Generative AI', 'Modern Web Frameworks', 'Agile', 'CI/CD']
+    },
+    {
+      id: '2',
+      title: 'AI/ML Engineering Intern',
       company: 'Innominds',
       location: 'Remote',
       period: 'May 2025 – August 2025',
       responsibilities: [
-        'Assist with machine learning and AI projects, including computer vision and analytics',
-        'Collaborate with team on optimizing model performance and integrating solutions into real-world applications',
-        'Engage in code discussions and contribute to the team\'s understanding of AI/ML best practices'
+        'Implemented machine learning pipelines using Python and PyTorch, improving model accuracy by 75% through hyperparameter tuning and feature engineering',
+        'Developed RESTful APIs using Flask to deploy ML models into production, handling real-time inference requests',
+        'Participated in agile sprints and code reviews, following industry best practices for version control and testing'
       ],
-      tech: ['Machine Learning', 'Computer Vision', 'Python', 'AI Analytics']
+      tech: ['Python', 'PyTorch', 'Flask', 'RESTful APIs', 'Machine Learning', 'Agile']
     },
     {
-      id: '2', 
+      id: '3', 
       title: 'Technical Secretary',
-      company: 'IEEE Robotics and Automation Society, MUJ',
-      location: 'Manipal University Jaipur',
+      company: 'IEEE RAS MUJ',
+      location: 'Jaipur',
       period: 'May 2025 – Present',
       responsibilities: [
-        'Support the society\'s technical activities, documentation, and events',
-        'Encourage collaboration, foster technical engagement, and share knowledge among student members',
-        'Help organize robotics and automation workshops, promoting a community of learners'
+        'Directed technical documentation and engineering workflows for robotics and UAV development projects, ensuring quality standards across 5+ concurrent initiatives',
+        'Led software integration for autonomous UAV systems, implementing flight control algorithms and sensor fusion for real-time navigation',
+        'Organized technical workshops on embedded systems, robotics programming, and IoT integration for 100+ students'
       ],
-      tech: ['Robotics', 'Automation', 'Technical Documentation', 'Leadership']
+      tech: ['Robotics', 'UAV Systems', 'Technical Leadership', 'Software Integration', 'IoT']
     },
     {
-      id: '3',
+      id: '4',
       title: 'Head of UAV Design',
-      company: 'IEEE Robotics and Automation Society, MUJ', 
-      location: 'Manipal University Jaipur',
+      company: 'IEEE RAS MUJ', 
+      location: 'Jaipur',
       period: 'July 2024 – May 2025',
       responsibilities: [
-        'Led a team developing UAV systems, contributing ideas and engineering solutions alongside peers',
-        'Organized technical workshops on robotics and hardware integration',
-        'Emphasized collaborative learning and sharing of best practices in UAV design'
+        'Managed multidisciplinary team of 15 students in end-to-end design and development of UAV systems and hybrid VTOL drones using agile methodologies',
+        'Designed hardware-software integration frameworks for autonomous flight systems, implementing communication protocols and control systems',
+        'Led technical workshops and collaborative learning sessions on UAV design and aerospace systems'
       ],
-      tech: ['UAV Design', 'Hardware Integration', 'Aerospace Systems', 'Team Leadership']
+      tech: ['UAV Design', 'VTOL Systems', 'Agile', 'Team Leadership', 'Aerospace Engineering']
     }
   ];
 
