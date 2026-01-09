@@ -19,23 +19,8 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
   const gridRef = useRef<HTMLDivElement>(null);
   
   // Updated with user-provided live and GitHub links
+  // Projects with live demos displayed first
   const projects = [
-    {
-      id: '1',
-      title: 'MedSecure – HIPAA-Compliant Medical Records Platform',
-      description: 'Built secure healthcare platform with role-based access control (RBAC), JWT authentication, and encrypted data storage. Architected normalized relational database schema with optimized queries for efficient data retrieval.',
-      tech: ['Next.js 15', 'TypeScript', 'PostgreSQL', 'JWT', 'RBAC', 'Security'],
-      github: 'https://github.com/Shresth-Senwal/Med-Secure',
-      demo: undefined,
-    },
-    {
-      id: '2',
-      title: 'N.E.W.S – IoT Health Monitoring System',
-      description: 'Grand Finalist - SIH 2025. Developed distributed system processing real-time sensor data from 50+ IoT devices with 99.9% uptime. Implemented ETL pipelines using Python to process water quality data, enabling predictive analytics for disease detection.',
-      tech: ['React', 'Python', 'LoRaWAN', 'XGBoost', 'IoT', 'ETL', 'MongoDB Atlas'],
-      github: undefined,
-      demo: undefined,
-    },
     {
       id: '3',
       title: 'Legally AI – Legal Research Automation Tool',
@@ -76,7 +61,70 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
       github: 'https://github.com/Shresth-Senwal/pixel-palettes-pls',
       demo: 'https://www.ieeerasmuj.com/pixelpalettes/',
     },
-    // Removed MCP Enabled AEMT per user request
+    {
+      id: '10',
+      title: 'Flagr – AI-Driven Document Analysis Platform',
+      description: 'Modern AI-driven document analysis and chat platform built with React and TypeScript. Unifies intelligent document processing with a natural language conversational interface, allowing users to seamlessly query documents and instantly flags suspicious or risky content within contracts.',
+      tech: ['React', 'TypeScript', 'AI/ML', 'Document Processing', 'NLP', 'Contract Analysis'],
+      github: undefined,
+      demo: 'https://flagr.vercel.app/',
+    },
+    {
+      id: '11',
+      title: 'ALERT-AID – Disaster Prediction & Alert System',
+      description: 'Production-ready disaster prediction and alert system with React, TypeScript, and ML. Features interactive 3D globe, real-time weather monitoring, and intelligent risk assessment for proactive emergency response.',
+      tech: ['React', 'TypeScript', 'Machine Learning', '3D Visualization', 'Real-time Monitoring', 'Risk Assessment'],
+      github: undefined,
+      demo: 'https://alert-aid.vercel.app/',
+    },
+    {
+      id: '12',
+      title: 'SACH.AI – Intelligent Food Analyzer',
+      description: 'An intelligent food analyzer that uses AI to provide personalized dietary insights. Built for the EnCode 2026 Hackathon with a focus on AI-native experience, real-time streaming, and generative UI.',
+      tech: ['AI/ML', 'Real-time Streaming', 'Generative UI', 'Mobile App', 'Dietary Analysis'],
+      github: undefined,
+      demo: 'https://truth-pulse-seven.vercel.app/',
+    },
+    {
+      id: '13',
+      title: 'RESQ – Emergency Response Platform',
+      description: 'Production-ready emergency response platform for real-time incident coordination. Built with React, TypeScript, Supabase, and Leaflet, connecting citizens, emergency responders, and resources in critical moments.',
+      tech: ['React', 'TypeScript', 'Supabase', 'Leaflet', 'Real-time Coordination', 'Emergency Response'],
+      github: undefined,
+      demo: 'https://res-q-f.vercel.app/',
+    },
+    {
+      id: '14',
+      title: 'DJEDOPS – Blockchain Monitoring Platform',
+      description: 'Mission-critical monitoring platform for Djed algorithmic stablecoin protocol on Ergo blockchain. Features live blockchain data, 3D visualizations, and automated risk management with Financial Brutalism design.',
+      tech: ['Blockchain', 'Ergo', 'Real-time Monitoring', '3D Visualization', 'DeFi', 'Risk Management'],
+      github: undefined,
+      demo: 'https://djed-ops.vercel.app/',
+    },
+    {
+      id: '15',
+      title: 'FLOWKEY – AI System Design Generator',
+      description: 'Flowkey is an AI-powered platform that enables the generation of complete system designs from a single prompt, streamlining the system architecture process.',
+      tech: ['AI/ML', 'System Design', 'Architecture Generation', 'Automation', 'Developer Tools'],
+      github: undefined,
+      demo: 'https://flow-key-iota.vercel.app/',
+    },
+    {
+      id: '1',
+      title: 'MedSecure – HIPAA-Compliant Medical Records Platform',
+      description: 'Built secure healthcare platform with role-based access control (RBAC), JWT authentication, and encrypted data storage. Architected normalized relational database schema with optimized queries for efficient data retrieval.',
+      tech: ['Next.js 15', 'TypeScript', 'PostgreSQL', 'JWT', 'RBAC', 'Security'],
+      github: 'https://github.com/Shresth-Senwal/Med-Secure',
+      demo: undefined,
+    },
+    {
+      id: '2',
+      title: 'N.E.W.S – IoT Health Monitoring System',
+      description: 'Grand Finalist - SIH 2025. Developed distributed system processing real-time sensor data from 50+ IoT devices with 99.9% uptime. Implemented ETL pipelines using Python to process water quality data, enabling predictive analytics for disease detection.',
+      tech: ['React', 'Python', 'LoRaWAN', 'XGBoost', 'IoT', 'ETL', 'MongoDB Atlas'],
+      github: undefined,
+      demo: undefined,
+    },
     {
       id: '9',
       title: 'Hybrid VTOL Drone',
