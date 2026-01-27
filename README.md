@@ -1,13 +1,10 @@
-
 # Shresth Senwal Portfolio
 
 ## Project Overview
-
-This is a modern AI/ML engineer and full-stack developer portfolio web application built with React, TypeScript, Vite, shadcn-ui, and Tailwind CSS. It showcases AI/ML projects, robotics work, web development skills, education, and professional experience in a visually appealing, accessible, and responsive layout.
+This is a modern AI/ML engineer and full-stack developer portfolio web application built with **React**, **TypeScript**, **Bun Native**, **shadcn-ui**, and **Tailwind CSS**. It showcases AI/ML projects, robotics work, and professional experience in a visually stunning, high-performance interface.
 
 ## Getting Started
-
-To run this project locally:
+To run this project locally, you must have [Bun](https://bun.sh) installed.
 
 ```sh
 # Clone the repository
@@ -16,42 +13,30 @@ git clone https://github.com/Shresth-Senwal/shresth-senwal-portfolio.git
 # Navigate to the project directory
 cd shresth-senwal-portfolio
 
-# Install dependencies
-npm install
+# Install dependencies using Bun
+bun install
 
-# Start the development server
-npm run dev
+# Start the native Bun development server
+bun run dev
 ```
 
-The app will be available at `http://localhost:8080` (or the next available port).
+The app will be available at `http://localhost:8080`.
 
-## Technologies Used
+## Tech Stack (Bun Native)
+- **Runtime & Package Manager**: [Bun](https://bun.sh)
+- **Bundler & Compiler**: Bun.build (Native)
+- **Dev Server**: Bun.serve (Native)
+- **Frontend**: React 18
+- **Styling**: Tailwind CSS 3 (via Tailwind CLI)
+- **Animations**: Framer Motion & GSAP
+- **3D Graphics**: Three.js & React Three Fiber
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## Deployment
-
-You can deploy this project to any static hosting provider (e.g., Vercel, Netlify, GitHub Pages) by building the production assets:
-
+## Build & Deployment
+To create a production-ready build:
 ```sh
-npm run build
+bun run build
 ```
-
-Then upload the contents of the `dist` folder to your chosen host.
-
-## Custom Domain
-
-To use a custom domain, follow your hosting provider's instructions for domain setup and DNS configuration.
-
-## Contributing
-
-Pull requests and issues are welcome! Please follow the code style and contribution guidelines in the repository.
+This generates a static bundle in the `dist` folder which can be deployed to any static host (Vercel, Netlify, etc.).
 
 ## License
-
-This project is open source and available under the MIT License.
-
+MIT

@@ -3,7 +3,6 @@
 // Each tag: front = member name, back = 'bluds'.
 // Dependencies: @react-three/fiber, @react-three/drei, @react-three/rapier, meshline, three
 // Asset requirements: card.glb, lanyard.png in src/assets/lanyard
-// Vite config: assetsInclude: ['**/*.glb']
 // TypeScript: see prompt.md for module declarations if needed
 "use client";
 import React, { useRef, useState, useEffect, Suspense } from "react";
@@ -78,8 +77,8 @@ export const Lanyard3D: React.FC<Lanyard3DProps> = ({
           </h3>
           <div className="flex flex-wrap gap-6 justify-center">
             {TEAM.map((member, index) => (
-              <div 
-                key={member.name} 
+              <div
+                key={member.name}
                 className="bg-gradient-to-br from-gray-700 to-gray-800 p-6 rounded-xl shadow-2xl transform hover:scale-105 transition-transform duration-300"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
@@ -105,10 +104,10 @@ export const Lanyard3D: React.FC<Lanyard3DProps> = ({
       <div className="absolute top-4 left-4 text-white text-xs z-50 bg-black/50 p-2 rounded">
         3D Status: {isLoading ? "Loading..." : hasError ? "Error" : "Ready"}
       </div>
-      
+
       <Canvas
         camera={{ position, fov }}
-        gl={{ 
+        gl={{
           alpha: transparent,
           antialias: true,
           powerPreference: "high-performance"
@@ -137,7 +136,7 @@ export const Lanyard3D: React.FC<Lanyard3DProps> = ({
           <boxGeometry args={[1, 1, 1]} />
           <meshBasicMaterial color="red" />
         </mesh>
-        
+
         <ambientLight intensity={Math.PI} />
         <Suspense fallback={
           <Html center>
@@ -237,7 +236,7 @@ function Band({ index, name, maxSpeed = 50, minSpeed = 0, onError }: BandProps) 
 
   // Add error handling for asset loading
   let nodes: any, materials: any, texture: any;
-  
+
   try {
     const gltf = useGLTF(cardGLBUrl);
     nodes = gltf.nodes;
@@ -247,14 +246,14 @@ function Band({ index, name, maxSpeed = 50, minSpeed = 0, onError }: BandProps) 
     console.warn("Failed to load GLB model:", error);
     onError?.("Failed to load GLB model");
     // Use fallback geometry
-    nodes = { 
+    nodes = {
       card: { geometry: new THREE.BoxGeometry(1, 1, 0.1) },
       clip: { geometry: new THREE.BoxGeometry(0.2, 0.2, 0.1) },
       clamp: { geometry: new THREE.BoxGeometry(0.1, 0.1, 0.1) }
     };
-    materials = { 
-      base: { map: null }, 
-      metal: new THREE.MeshStandardMaterial({ color: 0x888888 }) 
+    materials = {
+      base: { map: null },
+      metal: new THREE.MeshStandardMaterial({ color: 0x888888 })
     };
   }
 
@@ -262,7 +261,7 @@ function Band({ index, name, maxSpeed = 50, minSpeed = 0, onError }: BandProps) 
   try {
     console.log("Attempting to load texture from:", lanyardUrl);
     texture = useLoader(THREE.TextureLoader, lanyardUrl);
-    
+
     if (texture) {
       console.log("✅ Texture loaded successfully:", texture);
       texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
@@ -274,19 +273,19 @@ function Band({ index, name, maxSpeed = 50, minSpeed = 0, onError }: BandProps) 
   } catch (error) {
     console.error("❌ Failed to load texture:", error);
     onError?.(`Failed to load texture: ${error}`);
-    
+
     // Create a more visible fallback texture with pattern
     const canvas = document.createElement('canvas');
     canvas.width = canvas.height = 256;
     const ctx = canvas.getContext('2d')!;
-    
+
     // Create a gradient background
     const gradient = ctx.createLinearGradient(0, 0, 256, 256);
     gradient.addColorStop(0, '#6366f1');
     gradient.addColorStop(1, '#8b5cf6');
     ctx.fillStyle = gradient;
     ctx.fillRect(0, 0, 256, 256);
-    
+
     // Add texture pattern
     ctx.fillStyle = 'rgba(255, 255, 255, 0.1)';
     for (let x = 0; x < 256; x += 32) {
@@ -296,13 +295,13 @@ function Band({ index, name, maxSpeed = 50, minSpeed = 0, onError }: BandProps) 
         }
       }
     }
-    
+
     // Add "FALLBACK" text
     ctx.fillStyle = 'rgba(255, 255, 255, 0.8)';
     ctx.font = '20px Arial';
     ctx.textAlign = 'center';
     ctx.fillText('FALLBACK', 128, 128);
-    
+
     texture = new THREE.CanvasTexture(canvas);
     texture.wrapS = texture.wrapT = THREE.RepeatWrapping;
     console.log("✅ Fallback texture created successfully");

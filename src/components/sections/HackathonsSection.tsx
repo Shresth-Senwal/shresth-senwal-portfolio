@@ -26,6 +26,19 @@ export const HackathonsSection: React.FC<HackathonsSectionProps> = ({ className 
       color: 'from-green-400 to-emerald-500'
     },
     {
+      id: '5',
+      title: 'East India Blockchain 2.0 (EIBS)',
+      organizer: 'IIT Kharagpur',
+      achievement: 'Grand Finalist (Top 10 in India)',
+      project: 'DJEDOPS',
+      description: 'Competing as a Grand Finalist at IIT Kharagpur in India\'s largest blockchain hackathon. Developed a mission-critical monitoring platform for Djed algorithmic stablecoin protocol on Ergo blockchain, featuring live blockchain data and automated risk management.',
+      tech: ['Blockchain', 'Ergo', 'Real-time Monitoring', '3D Visualization', 'DeFi', 'Risk Management'],
+      date: '2026',
+      participants: 'Team Event',
+      icon: Trophy,
+      color: 'from-purple-400 to-pink-500'
+    },
+    {
       id: '2',
       title: 'Nebula Nexus Hackathon',
       organizer: 'Cosmos Club, MUJ',
@@ -63,19 +76,6 @@ export const HackathonsSection: React.FC<HackathonsSectionProps> = ({ className 
       participants: 'Team Event',
       icon: Trophy,
       color: 'from-blue-400 to-purple-500'
-    },
-    {
-      id: '5',
-      title: 'East India Blockchain 2.0 (EIBS)',
-      organizer: 'IIT Kharagpur',
-      achievement: 'Finalist (Ongoing)',
-      project: 'DJEDOPS',
-      description: 'Currently competing in final round with mission-critical monitoring platform for Djed algorithmic stablecoin protocol on Ergo blockchain, featuring live blockchain data and automated risk management.',
-      tech: ['Blockchain', 'Ergo', 'Real-time Monitoring', '3D Visualization', 'DeFi', 'Risk Management'],
-      date: '2026',
-      participants: 'Team Event',
-      icon: Trophy,
-      color: 'from-purple-400 to-pink-500'
     }
     // Removed HackX 2025 per user request
   ];

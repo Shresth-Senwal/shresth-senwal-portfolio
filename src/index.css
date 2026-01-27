@@ -21,6 +21,17 @@
     touch-action: manipulation; /* Improve touch performance */
     overflow-x: hidden; /* Prevent horizontal scroll on mobile */
   }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  html {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
   
   /* Improve touch targets for mobile */
   button, a, [role="button"] {

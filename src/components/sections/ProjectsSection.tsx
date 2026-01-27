@@ -17,7 +17,7 @@ interface ProjectsSectionProps {
 
 export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = '' }) => {
   const gridRef = useRef<HTMLDivElement>(null);
-  
+
   // Updated with user-provided live and GitHub links
   // Projects with live demos displayed first
   const projects = [
@@ -80,7 +80,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
     {
       id: '12',
       title: 'SACH.AI – Intelligent Food Analyzer',
-      description: 'An intelligent food analyzer that uses AI to provide personalized dietary insights. Built for the EnCode 2026 Hackathon with a focus on AI-native experience, real-time streaming, and generative UI.',
+      description: 'An intelligent food analyzer that uses AI to provide personalized dietary insights. Focused on an AI-native experience, featuring real-time streaming and a generative UI for intuitive health tracking.',
       tech: ['AI/ML', 'Real-time Streaming', 'Generative UI', 'Mobile App', 'Dietary Analysis'],
       github: undefined,
       demo: 'https://truth-pulse-seven.vercel.app/',
@@ -146,7 +146,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
       <section id="projects" className={`py-8 sm:py-12 lg:py-16 ${className}`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Header */}
-          <div 
+          <div
             className="text-center mb-8 sm:mb-10 md:mb-12"
           >
             <ScrollReveal
@@ -164,7 +164,7 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
               textClassName="text-gray-300 text-base sm:text-lg max-w-4xl mx-auto leading-relaxed px-2"
               delay={0.4}
             >
-              A showcase of innovative solutions and creative implementations across various technologies, 
+              A showcase of innovative solutions and creative implementations across various technologies,
               featuring full-stack applications, AI integrations, and secure enterprise platforms.
             </ScrollReveal>
           </div>
