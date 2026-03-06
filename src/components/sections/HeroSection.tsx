@@ -5,6 +5,7 @@ import { RotatingText } from '../animated/RotatingText';
 import { GlassButton } from '@/components/ui/glass-button';
 import RippleGrid from '@/components/animated/RippleGrid';
 import ScrollReveal from '../animated/ScrollReveal';
+import { Download } from 'lucide-react';
 
 interface HeroSectionProps {
   className?: string;
@@ -69,8 +70,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ className = '' }) => {
             <span className="glitch" aria-label="SHRESTH SENWAL">
               SHRESTH SENWAL
             </span>
-        {/* Glitch effect styles */}
-        <style>{`
+            {/* Glitch effect styles */}
+            <style>{`
           .glitch {
             position: relative;
             color: #fff;
@@ -130,7 +131,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ className = '' }) => {
             containerClassName="mb-6 md:mb-8"
             textClassName="text-lg sm:text-xl md:text-2xl text-white px-2"
             delay={0.4}
-          > 
+          >
             Dedicated AI/ML engineer and full-stack web developer focused on using technology to solve real-world problems
           </ScrollReveal>
         </motion.div>
@@ -142,7 +143,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ className = '' }) => {
           transition={{ duration: 0.8, delay: 0.6 }}
           className="mb-6 md:mb-8"
         >
-          <RotatingText 
+          <RotatingText
             texts={roles}
             className="text-lg sm:text-xl md:text-2xl h-8 md:h-10 text-white font-medium px-2"
           />
@@ -153,6 +154,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ className = '' }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 1.4 }}
+          className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6"
         >
           <GlassButton
             onClick={scrollToProjects}
@@ -161,6 +163,20 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ className = '' }) => {
           >
             View My Work
           </GlassButton>
+          <a
+            href="/assets/resume.pdf"
+            download="Shresth_Senwal_Resume.pdf"
+            className="inline-block"
+          >
+            <GlassButton
+              size="lg"
+              variant="secondary"
+              className="group/cv"
+            >
+              <Download className="w-5 h-5 mr-2" />
+              Download CV
+            </GlassButton>
+          </a>
         </motion.div>
       </div>
 

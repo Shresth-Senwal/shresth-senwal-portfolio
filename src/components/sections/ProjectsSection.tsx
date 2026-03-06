@@ -23,11 +23,11 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
   const projects = [
     {
       id: '3',
-      title: 'Legally AI – Legal Research Automation Tool',
-      description: 'Engineered document processing system using NLP and LLMs, reducing case research time by 70%. Built scalable RESTful API with rate limiting and caching mechanisms for concurrent requests.',
-      tech: ['Python', 'NLP', 'OpenAI API', 'LLM', 'RESTful APIs', 'Legal Tech'],
-      github: 'https://github.com/Shresth-Senwal/legally-assist-ai',
-      demo: 'https://legally-assist-ai.vercel.app/',
+      title: 'PolyPact: Multimodal AI Paralegal Platform',
+      description: 'PolyPact is a state-of-the-art multimodal AI Paralegal Platform designed to revolutionize legal reasoning and case management. Built with a focus on efficiency, security, and ultra-high performance, it utilizes a state-driven "Case Container" model to provide isolated legal contexts and automated legal intelligence.',
+      tech: ['Vision AI', 'Gemini 3.1', 'Cydonia 24B', 'RAG', 'Neural Graph', 'Legal Tech'],
+      github: 'https://github.com/Shresth-Senwal/Polypact',
+      demo: 'https://lexis-ai-iota.vercel.app/',
     },
     {
       id: '4',

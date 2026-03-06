@@ -44,9 +44,10 @@ N.E.W.S – IoT Health Monitoring System React, Python, LoRaWAN, Grand Finalist 
 • Developed distributed system processing real-time sensor data from 50+ IoT devices with 99.9% uptime.
 • Implemented ETL pipelines using Python to process water quality data, enabling predictive analytics for disease
 detection.
-Legally AI – Legal Research Automation Tool Python, NLP, OpenAI API
-• Engineered document processing system using NLP and LLMs, reducing case research time by 70%.
-• Built scalable RESTful API with rate limiting and caching mechanisms for concurrent requests.
+PolyPact – Multimodal AI Paralegal Platform React, TypeScript, Gemini, Cydonia
+• Built a multimodal AI platform using a state-driven "Case Container" model to provide isolated legal contexts and automated legal intelligence.
+• Implemented High-Fidelity Vision AI (Gemini 2.5 Flash Lite) for OCR and legal reasoning engine supporting clause-level favorability analysis.
+• Developed a premium Spotify-inspired UI/UX for case management and interactive neural graph visualization of case entities.
 ACHIEVEMENTS
 Smart India Hackathon (SIH) 2025 – Grand Finalist (Top 0.1% nationwide)
 Competed at national finals among 890,000 students with IoT-based healthcare solution.
