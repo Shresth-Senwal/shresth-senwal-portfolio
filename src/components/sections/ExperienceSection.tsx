@@ -1,7 +1,9 @@
 import React, { useRef } from 'react';
 import { motion } from 'framer-motion';
+import { Download } from 'lucide-react';
 import ScrollReveal from '../animated/ScrollReveal';
 import { ParticleCard, GlobalSpotlight } from '../animated/MagicBento';
+import { GlassButton } from '../ui/glass-button';
 
 interface ExperienceSectionProps {
   className?: string;
@@ -17,6 +19,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ className 
       company: 'Qapp.ai',
       location: 'Remote',
       period: 'December 2025 – Present',
+      certificateUrl: '/assets/Qapp.pdf',
       responsibilities: [
         'Building generative AI applications using state-of-the-art LLMs and prompt engineering techniques to deliver production-ready solutions',
         'Developing and deploying AI-powered features using modern web frameworks, ensuring seamless integration with existing systems',
@@ -30,6 +33,7 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ className 
       company: 'Innominds',
       location: 'Remote',
       period: 'May 2025 – August 2025',
+      certificateUrl: '/assets/Innominds.pdf',
       responsibilities: [
         'Implemented machine learning pipelines using Python and PyTorch, improving model accuracy by 75% through hyperparameter tuning and feature engineering',
         'Developed RESTful APIs using Flask to deploy ML models into production, handling real-time inference requests',
@@ -147,15 +151,31 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ className 
                     </div>
 
                     {/* Technologies */}
-                    <div className="flex flex-wrap gap-2">
-                      {experience.tech.map((tech, idx) => (
-                        <span
-                          key={idx}
-                          className="px-3 py-1 bg-gradient-to-r from-portfolio-purple/30 to-portfolio-purple-light/30 border border-portfolio-purple/40 rounded-full text-white text-xs sm:text-sm font-medium hover:scale-105 transition-transform duration-200"
+                    <div className="flex flex-wrap items-center justify-between gap-4 mt-auto">
+                      <div className="flex flex-wrap gap-2">
+                        {experience.tech.map((tech, idx) => (
+                          <span
+                            key={idx}
+                            className="px-3 py-1 bg-gradient-to-r from-portfolio-purple/30 to-portfolio-purple-light/30 border border-portfolio-purple/40 rounded-full text-white text-xs sm:text-sm font-medium hover:scale-105 transition-transform duration-200"
+                          >
+                            {tech}
+                          </span>
+                        ))}
+                      </div>
+
+                      {experience.certificateUrl && (
+                        <a 
+                          href={experience.certificateUrl} 
+                          download 
+                          className="relative flex items-center justify-center gap-1.5 px-3 py-1.5 rounded-lg bg-portfolio-purple/20 hover:bg-portfolio-purple/40 text-white transition-all duration-300 text-[10px] font-medium hover:scale-105 hover:shadow-lg hover:shadow-portfolio-purple/30 overflow-hidden group/btn touch-manipulation uppercase tracking-wider border border-portfolio-purple/30 ml-auto"
+                          onClick={(e) => e.stopPropagation()}
                         >
-                          {tech}
-                        </span>
-                      ))}
+                          {/* Button shine effect */}
+                          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover/btn:translate-x-full transition-transform duration-500" />
+                          <Download size={12} className="relative z-10 text-portfolio-purple-light" />
+                          <span className="relative z-10">Certificate</span>
+                        </a>
+                      )}
                     </div>
                   </div>
                 </ParticleCard>

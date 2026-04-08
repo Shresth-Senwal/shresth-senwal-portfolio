@@ -30,6 +30,7 @@ A premium, modern portfolio website for Shresth Senwal, featuring full-stack pro
 
 ## Feature Status
 - [x] Modern interactive UI with glassmorphism (Added Download CV button)
+- [x] Internship Certificates (Download buttons for Qapp.ai and Innominds)
 - [x] Hackathons Section (SIH 2025, EIBS 2.0 updated)
 - [x] Projects Section (AI, Blockchain, Web Dev) - Updated with PolyPact (AI Paralegal Platform)
 - [x] Responsive design for mobile and desktop

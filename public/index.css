@@ -2659,6 +2659,10 @@ body {
   font-size: 0.8rem;
 }
 
+.text-\[10px\] {
+  font-size: 10px;
+}
+
 .text-\[clamp\(1\.6rem\2c 4vw\2c 3rem\)\] {
   font-size: clamp(1.6rem, 4vw, 3rem);
 }
@@ -2708,6 +2712,10 @@ body {
   font-weight: 600;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .tabular-nums {
   --tw-numeric-spacing: tabular-nums;
   font-variant-numeric: var(--tw-ordinal) var(--tw-slashed-zero) var(--tw-numeric-figure) var(--tw-numeric-spacing) var(--tw-numeric-fraction);
@@ -2735,6 +2743,10 @@ body {
 
 .tracking-tight {
   letter-spacing: -0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
 }
 
 .tracking-widest {
@@ -3399,6 +3411,10 @@ All colors MUST be HSL.
 
 .hover\:bg-muted\/50:hover {
   background-color: hsl(var(--muted) / 0.5);
+}
+
+.hover\:bg-portfolio-purple\/40:hover {
+  background-color: hsl(var(--portfolio-purple) / 0.4);
 }
 
 .hover\:bg-primary:hover {
