@@ -18,14 +18,14 @@ export const ExperienceSection: React.FC<ExperienceSectionProps> = ({ className 
       title: 'Generative AI Engineering Intern',
       company: 'Qapp.ai',
       location: 'Remote',
-      period: 'December 2025 – Present',
+      period: 'December 2025 – April 2026',
       certificateUrl: '/assets/Qapp.pdf',
       responsibilities: [
-        'Building generative AI applications using state-of-the-art LLMs and prompt engineering techniques to deliver production-ready solutions',
-        'Developing and deploying AI-powered features using modern web frameworks, ensuring seamless integration with existing systems',
-        'Participating in agile workflows and code reviews, implementing best practices for version control and documentation'
+        'Engineered an AI-powered Vite component generation tool allowing users to generate, preview, and test UI components through natural language prompting',
+        'Developed an AI-based supplier discovery agent integrating search APIs and LLMs to automate vendor sourcing and qualification',
+        'Built a high-performance CSV and Excel data manipulation tool for seamless processing and transformation of large datasets'
       ],
-      tech: ['LLMs', 'Prompt Engineering', 'Generative AI', 'Modern Web Frameworks', 'Agile', 'CI/CD']
+      tech: ['LLMs', 'Vite', 'React', 'Search APIs', 'Data Manipulation', 'Prompt Engineering', 'Generative AI']
     },
     {
       id: '2',

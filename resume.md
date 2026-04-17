@@ -16,11 +16,10 @@ Developer Tools Git, GitHub, Docker, VS Code, Postman, CI/CD, Jest, Linux/Unix
 Technologies RESTful APIs, GraphQL, MongoDB, PostgreSQL, Firebase, AWS, Microservices, WebSockets,
 OAuth, JWT
 WORK EXPERIENCE
-Generative AI Engineering Intern, Qapp.ai Remote — December 2025 – Present
-• Building generative AI applications using state-of-the-art LLMs and prompt engineering techniques to deliver productionready solutions.
-• Developing and deploying AI-powered features using modern web frameworks, ensuring seamless integration with
-existing systems.
-• Participating in agile workflows and code reviews, implementing best practices for version control and documentation.
+Generative AI Engineering Intern, Qapp.ai Remote — December 2025 – April 2026
+• Engineered an AI-powered Vite component generation tool allowing users to generate, preview, and test UI components through natural language prompting.
+• Developed an AI-based supplier discovery agent integrating search APIs and LLMs to automate vendor sourcing and qualification.
+• Built a high-performance CSV and Excel data manipulation tool for seamless processing and transformation of large datasets.
 AI/ML Engineering Intern, Innominds Remote — May 2025 – August 2025
 • Implemented machine learning pipelines using Python and PyTorch, improving model accuracy by 75% through hyperparameter tuning and feature engineering.
 • Developed RESTful APIs using Flask to deploy ML models into production, handling real-time inference requests.
