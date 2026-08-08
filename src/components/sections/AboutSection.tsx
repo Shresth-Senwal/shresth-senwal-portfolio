@@ -13,9 +13,10 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ className = '' }) =>
         {/* About Me Content - Centered */}
         <div className="space-y-4 sm:space-y-6">
           <ScrollReveal
-            containerClassName="text-center"
-            textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 sm:mb-6"
-            delay={0.01} // Reduced from 0.1 to 0.02 (20ms)
+            containerClassName="text-left"
+            textClassName="text-2xl sm:text-3xl md:text-4xl font-bold mb-4"
+            wordClassName="text-transparent bg-clip-text bg-gradient-to-r from-portfolio-purple to-portfolio-accent"
+            delay={0.01}
           >
             About Me
           </ScrollReveal>

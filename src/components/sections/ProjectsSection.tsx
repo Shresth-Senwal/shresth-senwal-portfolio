@@ -151,7 +151,8 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ className = ''
           >
             <ScrollReveal
               containerClassName="text-center"
-              textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-r from-portfolio-purple to-portfolio-accent px-2"
+              textClassName="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-4 sm:mb-6 px-2"
+              wordClassName="text-transparent bg-clip-text bg-gradient-to-r from-portfolio-purple to-portfolio-accent"
               delay={0.4}
             >
               Projects & Creations

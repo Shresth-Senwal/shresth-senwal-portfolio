@@ -41,6 +41,8 @@ interface ScrollRevealProps {
   containerClassName?: string;
   /** Additional CSS classes for the paragraph element wrapping the text. */
   textClassName?: string;
+  /** Additional CSS classes for the individual word span elements. */
+  wordClassName?: string;
   /** Delay before the animation starts (in seconds). */
   delay?: number;
 }
@@ -69,6 +71,7 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
   blurStrength = 4,
   containerClassName = "",
   textClassName = "",
+  wordClassName = "",
   delay = 0.4,
 }) => {
   const containerRef = useRef<HTMLHeadingElement>(null);
@@ -90,12 +93,12 @@ const ScrollReveal: React.FC<ScrollRevealProps> = ({
       // Wrap each word in a span to allow for individual animation.
       // The 'word' class is crucial for the GSAP animation selectors.
       return (
-        <span className="inline-block word" key={index}>
+        <span className={`inline-block word ${wordClassName}`} key={index}>
           {word}
         </span>
       );
     });
-  }, [children]);
+  }, [children, wordClassName]);
 
   /**
    * useEffect hook to set up the one-time GSAP animations.
